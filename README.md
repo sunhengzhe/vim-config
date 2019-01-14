@@ -28,7 +28,19 @@ To install from command line:` vim +PluginInstall +qall`
 
 [molokai](https://github.com/tomasr/molokai)
 
-### Notes
+### Use vim as git default editor
+
+1) use git command
+
+```bash
+git config --global core.editor vim
+```
+
+2) edit git config file
+
+add `editor = vim` to `~/.gitconfig`
+
+## Notes
 
 #### `set showcmd` not working
 
