@@ -10,8 +10,8 @@ cd vim-config
 cp ~/.vimrc ~/.vimrc.bk
 cp -r ~/.vim ~/.vim.bk 
 
-cp ./vimrc ~/.vimrc
-cp -r ./vim ~/.vim
+cp .vimrc ~/.vimrc
+cp -r .vim ~/.vim
 ```
 
 ## You should know with vim
