@@ -24,6 +24,12 @@ Launch vim and run `:PluginInstall`
 
 To install from command line:` vim +PluginInstall +qall`
 
+### Use easymotion to jump
+
+[easymotion](https://github.com/easymotion/vim-easymotion)
+
+`<Leader>` is `,`
+
 ### Use molokai as color theme
 
 [molokai](https://github.com/tomasr/molokai)

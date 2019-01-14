@@ -46,7 +46,7 @@ set selectmode=mouse,key
 " color theme
 colorscheme molokai
 
-" Vundle
+"""" Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -79,6 +79,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " typescript
 Plugin 'leafgarland/typescript-vim'
 
+" easymotion
+Plugin 'easymotion/vim-easymotion'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -96,5 +99,9 @@ filetype plugin indent on    " required
 """""""""""""""""
 
 " 显示正在输入的命令
-" 必须在 set nocompatible 之后
+" 必须 set nocompatible 之后
 set showcmd
+
+""""" easymotion
+map , <Plug>(easymotion-prefix)
+""""""""""""""""
