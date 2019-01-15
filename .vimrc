@@ -9,7 +9,7 @@ set showmode
 set scrolloff=6
 "开启光标位置提示
 set ruler
-" 只能自动缩进
+" 回车后智能缩进
 set smartindent
 " 语法高亮
 syntax on
@@ -17,7 +17,6 @@ syntax on
 set tabstop=4
 " 替换 tab 为 space
 set expandtab
-set smarttab
 set history=1024
 " 搜索忽略大小写，但有一个或以上大写字母时仍大小写敏感
 set ignorecase
