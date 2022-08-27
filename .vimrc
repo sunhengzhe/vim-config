@@ -9,12 +9,12 @@ set showmode
 set scrolloff=6
 "开启光标位置提示
 set ruler
-" 回车后智能缩进
+" 回车后缩进
 set smartindent
 " 语法高亮
 syntax on
 " tab 长度为 4
-set tabstop=4
+set tabstop=2
 " 替换 tab 为 space
 set expandtab
 set history=1024
@@ -42,8 +42,7 @@ set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 
-" color theme
-colorscheme molokai
+hi comment ctermfg=6
 
 """" Vundle
 set nocompatible              " be iMproved, required
@@ -65,7 +64,7 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
- Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -81,8 +80,34 @@ Plugin 'leafgarland/typescript-vim'
 " easymotion
 Plugin 'easymotion/vim-easymotion'
 
+" dracula https://draculatheme.com/vim
+Plugin 'dracula/vim', {'name': 'dracula'}
+
+Plugin 'neovimhaskell/haskell-vim'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'joshdick/onedark.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+"----------airline------------
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#buffer_nr_show = 1        "显示buffer编号
+let g:airline#extensions#tabline#buffer_nr_format = '%s:'
+let g:airline#extensions#battery#enabled = 1
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_theme='onedark'
+
+" color theme
+colorscheme molokai
+" colorscheme dracula
+
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
